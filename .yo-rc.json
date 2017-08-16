@@ -33,6 +33,7 @@
     "languages": [
       "fr",
       "en"
-    ]
+    ],
+    "herokuAppName": "blooming-reef-26720"
   }
 }
