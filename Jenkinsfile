@@ -48,11 +48,11 @@ node {
     //        archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
     //    }
 
-        stage('quality analysis') {
-            withSonarQubeEnv('Sonar') {
-                sh "./mvnw sonar:sonar -e -Dsonar.host.url=$SONAR_HOST_URL"
-            }
-        }
+   //     stage('quality analysis') {
+    //        withSonarQubeEnv('Sonar') {
+    //            sh "./mvnw sonar:sonar -e -Dsonar.host.url=$SONAR_HOST_URL"
+    //        }
+    //    }
 
   //      def dockerImage
    //     stage('build docker') {
