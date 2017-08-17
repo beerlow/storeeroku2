@@ -50,7 +50,7 @@ node {
 
         stage('quality analysis') {
             withSonarQubeEnv('Sonar') {
-                sh "./mvnw sonar:sonar -Dsonar.host.url=$SONAR_HOST_URL"
+                sh "./mvnw sonar:sonar -e -Dsonar.host.url=$SONAR_HOST_URL"
             }
         }
 
